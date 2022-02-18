@@ -88,6 +88,8 @@ h6 {
 :root {
    --primary-color: rgb(133, 131, 131);
    --secondary-color: rgb(177, 174, 174);
+   --pending-color: rgb(250, 196, 160);
+   --paid-color: rgb(226, 225, 225);
  }
 .header__wrapper{
    display: flex;
@@ -119,7 +121,6 @@ span{
    border: 1px solid var(--secondary-color);
    border-radius: 3px;
    height: 40px;
-   
 }
 .header__navigation{
    flex-direction: row;
@@ -129,7 +130,6 @@ span{
    height: 15px;
    cursor:pointer;
 }
-
 .header__items{
    display: flex;
 }
@@ -143,8 +143,8 @@ li.header__item:last-child{
    height: 40px;
    margin-left: 9px;
 }
+/* header ends*
 
-/* header ends*/
 .grid__body{
    display: grid;
    grid-template-columns: 0.4fr 1.2fr 2fr 1.5fr 1.2fr 1.7fr 1.6fr 1fr 1fr 1fr ;
@@ -154,7 +154,6 @@ li.header__item:last-child{
    font-family: Arial, Helvetica, sans-serif;
    color:var(--primary-color);
    white-space: nowrap;
-   
 }
 .grid__item{
    border-bottom: 2px solid var(--secondary-color);
@@ -175,9 +174,19 @@ li.header__item:last-child{
    color: var(--primary-color);
    white-space: nowrap;
 }
-
 .order__number{
    color:var(--primary-color);
    font-weight: 600;
-   
 }
+.pending{
+   background-color: var(--pending-color);
+   border-radius: 10px;
+   padding: 3px;
+}
+.paid{
+   background-color: var(--paid-color);
+   border-radius: 10px;
+   padding: 3px;
+}
+
+
