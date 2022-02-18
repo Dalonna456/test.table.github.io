@@ -11,9 +11,11 @@
 <body>
   <header class="header">
    <div class="header__wrapper">
-      
-    <input type="search" class="header__search" placeholder="Filter orders">
-
+     
+      <div class="header__input">
+         <input type="search" class="header__search" placeholder="Filter orders">
+      </div>
+   
     <div class="header__navigation">
       <nav class="header__list">
         <ul class="header__items">
@@ -41,104 +43,127 @@
    <main>
      <section class="table">
         <div class="table__wrapper">
-
-           <div class="table__title">
-              <ul class="title__items">
+         <div class="grid">
+            <div class="grid__body">
+               <div class="grid__item checkbox"> 
                   <input type="checkbox" class="table__checkbox">
-                     <li class="table__order">Order</li>
-                     <li class="table__date">Date</li>
-                     <li class="table__customer">Customer</li>
-                     <li class="table__total">Total</li>
-                     <li class="table__p-status">Payment status</li>
-                     <li class="table__ff-status">Fullfilment status</li>
-                     <li class="table__items">Items</li>
-                     <li class="table__delivery">Delivery method</li>
-                     <li class="table__tags">Tags</li>
-               </ul>
-            </div>
-         <div class="table__rows">
-              <input type="checkbox" class="table__checkbox">
-              <span class="order__number">#1058</span>
-              <span class="order__date">Thursday at 02:38 pm</span>
-              <span class="order__customer">No customer</span>
-              <span class="order__total">0.00</span>
-              <span class="order__status">Paid</span>
-              <span class="order__unfulfilled">Unfulfilled</span>
-              <span class="order__items">1 item</span>
-           </div>
-         <div class="table__rows">
-              <input type="checkbox" class="table__checkbox">
-              <span class="order__number">#1057</span>
-              <span class="order__date">Thursday at 02:37 pm</span>
-              <span class="order__customer">No customer</span>
-              <span class="order__total">0.00</span>
-              <span class="order__status">Paid</span>
-              <span class="order__unfulfilled">Unfulfilled</span>
-              <span class="order__items">1 item</span>
-            </div>
-         <div class="table__rows">
-               <input type="checkbox" class="table__checkbox">
-               <span class="order__number">#1056</span>
-               <span class="order__date">Thursday at 02:35 pm</span>
-               <span class="order__customer">No customer</span>
-               <span class="order__total">0.00</span>
-               <span class="order__status">Paid</span>
-               <span class="order__unfulfilled">Unfulfilled</span>
-               <span class="order__items">1 item</span>
-            </div>
-         <div class="table__rows"> 
-                <input type="checkbox" class="table__checkbox">
-                <span class="order__number">#1055</span>
-                <span class="order__date">Thursday at 02:33 pm</span>
-                <span class="order__customer">No customer</span>
-                <span class="order__total">0.00</span>
-                <span class="order__status">Paid</span>
-                <span class="order__unfulfilled">Unfulfilled</span>
-                <span class="order__items">1 item</span>
-            </div>
-         <div class="table__rows">
-                <input type="checkbox" class="table__checkbox">
-                <span class="order__number">#1054</span>
-                <span class="order__date">Thursday at 02:30 pm</span>
-                <span class="order__customer">No customer</span>
-                <span class="order__total">0.00</span>
-                <span class="order__status">Paid</span>
-                <span class="order__unfulfilled">Unfulfilled</span>
-                <span class="order__items">1 item</span>
-            </div>
-         <div class="table__rows">
-              <input type="checkbox" class="table__checkbox">
-              <span class="order__number">#1053</span>
-              <span class="order__date">Wednesday at 11:37 am</span>
-              <span class="order__customer">No customer</span>
-              <span class="order__total">11,111.00</span>
-              <span class="order__status">Payment pending</span>
-              <span class="order__unfulfilled">Unfulfilled</span>
-              <span class="order__items">2 item</span>
-              <span class="order__tags">333</span>
-            </div>
-         <div class="table__rows">
-                <input type="checkbox" class="table__checkbox">
-                <span class="order__number">#1052</span>
-                <span class="order__date">Wednesday at 11:35 am</span>
-                <span class="order__customer">No customer</span>
-                <span class="order__total">11,111.00</span>
-                <span class="order__status">Payment pending</span>
-                <span class="order__unfulfilled">Unfulfilled</span>
-                <span class="order__items">2 item</span>
-            </div>
-         <div class="table__rows">
-                 <input type="checkbox" class="table__checkbox">
-                 <span class="order__number">#1051</span>
-                 <span class="order__date">Wednesday at 11:34 am</span>
-                 <span class="order__customer">No customer</span>
-                 <span class="order__total">11,111.00</span>
-                 <span class="order__status">Payment pending</span>
-                 <span class="order__unfulfilled">Unfulfilled</span>
-                 <span class="order__items">2 item</span>
-            </div>
+               </div>
+                  <div class="grid__item table__title">Order</div>
+                  <div class="grid__item table__title">Date</div>
+                  <div class="grid__item table__title">Customer</div>
+                  <div class="grid__item table__title">Total</div>
+                  <div class="grid__item table__title">Payment status</div>
+                  <div class="grid__item table__title">Fullfilment status</div>
+                  <div class="grid__item table__title">Items</div>
+                  <div class="grid__item table__title">Delivery method</div>
+                  <div class="grid__item table__title">Tags</div>
 
+               <div class="grid__item checkbox">
+                  <input type="checkbox" class="table__checkbox">
+               </div>
+                  <div class="grid__item order__number">#1058</div>
+                  <div class="grid__item order__date">Thursday at 02:38 pm</div>
+                  <div class="grid__item order__customer">No customer</div>
+                  <div class="grid__item order__total">0.00</div>
+                  <div class="grid__item order__status">Paid</div>
+                  <div class="grid__item order__fullfilment">Unfulfilled</div>
+                  <div class="grid__item order__items">1 item</div>
+                  <div class="grid__item order__delivery"></div>
+                  <div class="grid__item order__tags"></div>
+
+               <div class="grid__item checkbox">
+                  <input type="checkbox" class="table__checkbox">
+               </div>
+                  <div class="grid__item order__number">#1057</div>
+                  <div class="grid__item order__date">Thursday at 02:37 pm </div>
+                  <div class="grid__item order__customer">No customer </div>
+                  <div class="grid__item order__total">0.00</div>
+                  <div class="grid__item order__status">Paid</div>
+                  <div class="grid__item order__fullfilment">Unfulfilled</div>
+                  <div class="grid__item order__items">1 item</div>
+                  <div class="grid__item order__delivery "></div>
+                  <div class="grid__item order__tags"></div>
+
+               <div class="grid__item checkbox">
+                  <input type="checkbox" class="table__checkbox">
+               </div>
+                  <div class="grid__item order__number">#1056</div>
+                  <div class="grid__item order__date">Thursday at 02:35 pm</div>
+                  <div class="grid__item order__customer">No customer</div>
+                  <div class="grid__item order__total">0.00</div>
+                  <div class="grid__item order__status">Paid</div>
+                  <div class="grid__item order__fullfilment">Unfulfilled</div>
+                  <div class="grid__item order__items">1 item</div>
+                  <div class="grid__item order__delivery"></div>
+                  <div class="grid__item order__tags"></div>
+
+               <div class="grid__item checkbox">
+                  <input type="checkbox" class="table__checkbox">
+               </div>
+                  <div class="grid__item order__number">#1055</div>
+                  <div class="grid__item order__date">Thursday at 02:33 pm</div>
+                  <div class="grid__item order__customer">No customer</div>
+                  <div class="grid__item order__total">0.00</div>
+                  <div class="grid__item order__status">Paid</div>
+                  <div class="grid__item order__fullfilment">Unfulfilled</div>
+                  <div class="grid__item order__items">1 item</div>
+                  <div class="grid__item order__delivery"></div>
+                  <div class="grid__item order__tags"></div>
+
+               <div class="grid__item checkbox">
+                  <input type="checkbox" class="table__checkbox">
+               </div>
+                  <div class="grid__item order__number">#1054</div>
+                  <div class="grid__item order__date">Thursday at 02:30 pm</div>
+                  <div class="grid__item order__customer">No customer</div>
+                  <div class="grid__item order__total">0.00</div>
+                  <div class="grid__item order__status">Paid</div>
+                  <div class="grid__item order__fullfilment">Unfulfilled</div>
+                  <div class="grid__item order__items">1 item</div>
+                  <div class="grid__item order__delivery"></div>
+                  <div class="grid__item order__tags"></div>
+
+               <div class="grid__item checkbox">
+                  <input type="checkbox" class="table__checkbox">
+               </div>
+                  <div class="grid__item order__number">#1053</div>
+                  <div class="grid__item order__date">Wednesday at 11:37 am</div>
+                  <div class="grid__item order__customer">No customer</div>
+                  <div class="grid__item order__total">11,111.00</div>
+                  <div class="grid__item order__status">Payment pending</div>
+                  <div class="grid__item order__fullfilment">Unfulfilled</div>
+                  <div class="grid__item order__items">2 items </div>
+                  <div class="grid__item order__delivery"></div>
+                  <div class="grid__item order__tags">333</div>
+
+               <div class="grid__item checkbox">
+                  <input type="checkbox" class="table__checkbox">
+               </div>
+                  <div class="grid__item order__number">#1052</div>
+                  <div class="grid__item order__date">Wednesday at 11:35 am</div>
+                  <div class="grid__item order__customer">No customer</div>
+                  <div class="grid__item order__total">11,111.00</div>
+                  <div class="grid__item order__status">Payment pending</div>
+                  <div class="grid__item order__fullfilment">Unfulfilled</div>
+                  <div class="grid__item order__items">2 items</div>
+                  <div class="grid__item order__delivery"></div>
+                  <div class="grid__item order__tags"></div>
+
+               <div class="grid__item checkbox">
+                  <input type="checkbox" class="table__checkbox">
+               </div>
+                  <div class="grid__item order__number">#1051</div>
+                  <div class="grid__item order__date">Wednesday at 11:34 am</div>
+                  <div class="grid__item order__customer">No customer</div>
+                  <div class="grid__item order__total">11,111.00</div>
+                  <div class="grid__item order__status">Payment pending</div>
+                  <div class="grid__item order__fullfilment">Unfulfilled</div>
+                  <div class="grid__item order__items">2 items</div>
+                  <div class="grid__item order__delivery"></div>
+                  <div class="grid__item order__tags"></div>
+            </div>
          </div>
+       </div>
      </section>
    </main>
 </body>
